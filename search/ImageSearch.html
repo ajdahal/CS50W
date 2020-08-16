@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Image_Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+
+        <style>
+
+            html,body {
+                height: 100%;
+            }
+
+            body > .container {
+                height: 100%;
+                padding-left: 50px;
+            }
+
+            .parent {
+                position: absolute;
+                top: 20px;
+                right: 5px;
+                height: 400px;
+                width: 400px;
+            }
+
+            .child {
+                position: absolute;
+            }
+            
+            .search {
+                right: 10px;
+            }
+
+            .container > .form_div {
+                position: relative;
+                height: 115px;
+                width: 550px;
+                top: 42%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            #input_text{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+            }
+
+            input[type=text]{
+                border-radius: 30px;
+                border: 1px solid gainsboro;
+                width: 500px;
+                height: 45px;
+                font-size: 18px;
+                background-image: url("searchicon.png");
+                background-size: 20px 20px;
+                background-color: white;
+                background-repeat: no-repeat;
+                background-position: 2%;
+                padding: 1px 1px 2px 40px;
+            }
+            #input_text button {
+                border: none;
+                padding: 0;
+            }
+
+            #submit_button {
+                position: absolute;
+                bottom: 0;
+                left: 35%;
+            }
+
+            input[name="search"]{
+                border-radius: 6px;
+                border-style: none;
+                color: solid gainsboro;
+                text-align: center;
+                width: 110px;
+                height: 40px;
+            }
+
+            input:focus, textarea:focus{outline:none;}
+        </style>
+
+    </head>
+    <body>
+        <div class=container>
+            <div class = "parent">
+                <div class="child search">
+                    <a href="index.html">Search</a>
+                </div>
+            </div>
+
+            <div class=form_div>
+                <form action="https://www.google.com/search">
+                    <div id = input_text>
+                        <input type="text" name="q" >
+                        <input type="hidden" name="tbm" value="isch">
+                    </div>
+                    <div id = submit_button>
+                        <input  name="search" type="submit" value="Image Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+

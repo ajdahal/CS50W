@@ -1,0 +1,46 @@
+/*----------------------------- index ------------------------------------*/
+.navbar-nav {
+  font-size: 20px; }
+
+.navbar-brand {
+  font-size: 50px;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#c0f17e, #7c82d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+#sign_in:hover {
+  color: blue; }
+
+#cart:hover {
+  color: blue; }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  padding-left: 20px; }
+
+.flex-container > .item {
+  background-color: white;
+  border: 10px solid white; }
+
+img {
+  height: 220px;
+  width: 220px; }
+
+.container-fluid {
+  background: darkslategrey;
+  justify-content: center;
+  padding-top: 25px;
+  padding-left: 20px; }
+
+.foot_icons {
+  height: 50px;
+  width: 50px; }
+
+.indexh3, .indexh4 {
+  padding-left: 20px; }
+
+/*# sourceMappingURL=index.css.map */

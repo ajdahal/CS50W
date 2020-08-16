@@ -1,0 +1,51 @@
+$left_padding: 40px;
+$top_padding: 30px;
+
+.container-fluid{
+    background:darkslategrey;
+    justify-content: center;
+    padding-top: $top_padding;
+    padding-left: $left_padding;
+    bottom:0;
+    position: absolute;
+}
+  
+.foot_icons {
+   height:50px;
+   width:50px;
+}
+
+#comments {
+    height: 250px;
+    width: 250px;
+}
+
+#submit_button{
+    margin-left: 100px;
+}
+
+h2 {
+    margin-left: $left_padding;
+    margin-top: $top_padding;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.mail_us {
+    bottom:0;
+    padding-left: $left_padding;
+    padding-top: $top_padding;
+
+}

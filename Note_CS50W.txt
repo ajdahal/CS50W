@@ -1,0 +1,174 @@
+//This file lists all the contents worth noting from CS50W
+
+https://github.com/me50/ajdahal.git
+
+open hello.html
+code hello.html
+code .            # opens the current directory 
+
+
+Git can have different braches
+The main branch is master (default/original branch) ... which is linear in structure
+The side branch can be used to work on a feature
+If we find any bug while working in the side branch we can merge the fix with master branch
+HEAD: Refers to where we are currently in the repository 
+Change HEAD from master to feature according to your need 
+
+git branch feature  # make a new branch feature
+git branch          # show all the branches
+git checkout feature    # go to feature branch
+code index.html         # make changes to index.html file in feature branch
+git commit -am "Added another line" # make commit in branch with message 
+git log                             # look for logs in git 
+git checkout master                 # go to master branch
+git merge feature                   # merge feature branch to main
+git branch -d feature               # remove feature branch 
+git branch feature
+git checkout feature
+git push --set-upstream origin feature  # push new branch feature to github
+
+Fork: take a repository from a project, and work on the project, add new features 
+After adding features, make pull requests -> i have these changes, please review the code so that i
+can add these features to master branch of the project 
+
+< a href="url_here" > click_here </a>
+href = different places to same webpage ( href ="#id_of_element" - could be paragraph_3)
+different webpage on same folder, url_here
+
+Tags worth noting:
+<header> <nav> <section> <footer> <audio> <video> <datalist> - [ Eg: list of countries to choose from ]
+
+h1, h2 are styled according
+h1, h2 {
+
+}
+
+li is children/descendent of ol, so style them accordingly
+Here, grandchildren of ol are also styled 
+ol li {
+}
+
+Here, the immediate children of ol are styled not grandchildren
+ol > li {
+
+}
+
+[type=text] //selective styling //Attribute selector
+input[type=text]{
+
+}
+# hover is sudo-class, so upon hover the color is changed 
+button:hover{
+    background-color: orange;
+}
+
+# before is sudo-element that adds content before the link 
+
+a::before{
+    content: "  asdf ";
+    font-weight: None;
+}
+<a href="#"> one link </a>  # "#" means don't link to anything right now 
+=> the result:     asdf one link
+
+p::selection{
+    color: red;
+    background-color: yellow;
+}
+
+Responsive Design:
+
+viewport
+Media Queries
+Flexbox
+Grids
+
+# show this on computer screen only
+# "screen_only" isn't seen when printing out the html page 
+
+@media print{
+    .screen-only {
+        display: none;
+    }
+}
+<p class="screen-only">screen_only</p> 
+
+# Webpage becomes device Responsive such that the text in page are scaled according to device-width
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+@media (min-width: 500px)
+    h1::before{
+        content:"welcome to my webpage";
+    }
+    body {
+            background-color: red;
+         }
+
+@media (max-width: 499px)
+    h1::before{
+        content:"welcome";
+    }
+    body {
+            background-color: blue;
+         }
+
+# HTML: here we have divs inside div with class name container 
+.container{                     
+    display: flex;     # another useful display: grid
+    flex-wrap: wrap;
+}
+.container > div {
+    background-color: springreen;
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+## Bootstrap
+# always think of making website look good for mobile devices as well as Desktop devices
+
+Say, you have a website on which we need to change color or some attribute on multiple pages
+Going to individual CSS file and changing each of CSS is cumbersome
+
+Solution:
+
+# Sass: Built on top of CSS
+Supports variable
+
+Browsers don't understand sass language and  .sass files such as"variables.scss"
+so convert Sass files to css as: sass variables.scss variables.css
+
+But you need to recompile the file everytime you change an attribute.
+
+Solution:
+Ask Sass to watch the file that needs to be changed, so whenever you change sass file, the file is recompiled 
+sass --watch variables.scss:variables.css
+
+Advantages:
+
+# Global variable
+$color:red;
+
+ul {
+    font-size: 14px;
+    colot; $color;
+}
+
+# Nesting styles 
+div {
+    p  {        # if it was css, we would have to put "div p {...}"
+
+    }
+    ul {
+
+    }
+}
+
+# Inheritance
+--> make template, that contains general properties for html elements
+--> individual element -> inherit from the template, add what is different 
+
+
+
+

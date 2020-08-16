@@ -1,0 +1,63 @@
+/*----------------------------- index ------------------------------------*/
+
+$color_on_hover:blue;
+$left_padding: 20px;
+$top_padding: 25px;
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+.navbar-brand{
+    font-size: 50px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#c0f17e,#7c82d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#sign_in:hover {
+    color: $color_on_hover;
+}
+
+#cart:hover {
+    color: $color_on_hover;
+}
+
+// body for main
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding-left: $left_padding;
+}
+
+.flex-container > .item{
+    background-color: white;
+    border: 10px solid white;
+    //margin: 5px solid white;
+}
+
+img {
+    height:220px;
+    width:220px;
+}
+
+
+.container-fluid{
+    background:darkslategrey;
+    justify-content: center;
+    padding-top: $top_padding;
+    padding-left: $left_padding;
+}
+
+.foot_icons {
+   height:50px;
+   width:50px;
+}
+
+.indexh3,.indexh4{
+    padding-left: $left_padding;
+}

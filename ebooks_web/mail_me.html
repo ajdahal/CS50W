@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mail_me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mail_me.css">
+</head>
+
+<h2>Mail Us</h2>
+
+<body>
+<div class="mail_us">
+    <form action="/mailing.py">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=" "><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=" "><br><br>
+    <label for="comments">Your comments:</label><br>
+    <div class="comments_box">
+        <textarea id="comments" name="comments" placeholder="Write something..." style="height:200px"></textarea><br><br>
+    </div>  
+    <input type="submit" id="submit_button" value="Submit">
+    </form>
+</div>
+</body>
+
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+    <div class="container-fluid text-center text-md-left foot">
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <h5 class="font-weight-bold text-uppercase mb-4">
+                    <a class="foot" href="index.html"><img class="foot_icons" src="home.png"alt="EMAIL"></a>
+                </h5>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <h5 class="font-weight-bold text-uppercase mb-4"> 
+                    <a class="foot" href="conditions_of_use.html"><img class="foot_icons" src="terms_of_use.png" alt="Conditions of Use"></a>
+                </h5>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <h5  class="font-weight-bold text-uppercase mb-4">
+                    <a class="foot" href="privacy_notice.html"><img class="foot_icons" src="privacy.png" alt="Privacy Notice"></a>
+
+                </h5>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <h5 class="font-weight-bold text-uppercase mb-4">
+                    <a class="foot" href="about.html"><img class="foot_icons" src="about.png"alt="about"></a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+

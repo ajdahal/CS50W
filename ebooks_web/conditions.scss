@@ -1,0 +1,33 @@
+/*-----------------------------------Conditions---------------------------------*/
+$top_padding: 25px;
+$left_padding: 10px;
+
+.grid-container {
+  position: relative;
+  text-align: left; }
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.terms_of_use_text {
+  border: 2px solid darkslategrey;
+  border-radius: 5px;
+}
+
+.container-fluid{
+  background:darkslategrey;
+  justify-content: center;
+  padding-top: $top_padding;
+  padding-left: $left_padding;
+  bottom:0;
+  position: absolute;
+}
+
+.foot_icons {
+ height:50px;
+ width:50px;
+}

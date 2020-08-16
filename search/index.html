@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Search</title>
+        <meta name="viewport" http-equiv="Refresh" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+
+        <style>
+
+            html,body {
+                height: 100%;
+            }
+
+            body > .container {
+                height: 100%;
+                padding-left: 50px;
+            }
+
+            .parent {
+                position: absolute;
+                top: 20px;
+                right: 5px;
+                height: 400px;
+                width: 400px;
+            }
+
+            .child {
+                position: absolute;
+            }
+
+            .image {
+                right: 150px;
+            }
+            
+            .advanced {
+                right: 10px;
+            }
+
+            .container > .form_div {
+                position: relative;
+                height: 115px;
+                width: 550px;
+                top: 42%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            #input_text{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            input[type=text]{
+                border-radius: 30px;
+                border: 1px solid gainsboro;
+                width: 500px;
+                height: 45px;
+                font-size: 18px;
+                background-image: url("searchicon.png");
+                background-size: 20px 20px;
+                background-color: white;
+                background-repeat: no-repeat;
+                background-position: 2%;
+                padding: 1px 1px 2px 40px;
+            }
+
+            #submit_button {
+                position: absolute;
+                bottom: 0;
+                left: 25%;
+            }
+
+            input[name="search"]{
+                border-radius: 6px;
+                border-style: none;
+                color: solid gainsboro;
+                text-align: center;
+                width: 110px;
+                height: 40px;
+            }
+
+            #lucky {
+                position: absolute;
+                bottom: 0;
+                left: 48%;
+            }
+
+            input[name="btnI"]{
+                border-radius: 6px;
+                border-style: none;
+                color: solid gainsboro;
+                text-align: center;
+                width: 125px;
+                height: 40px;
+            }
+
+            input:focus, textarea:focus{outline:none;}
+        </style>
+
+    </head>
+    <body>
+        <div class=container>
+            <div class = "parent">
+                <div class="child image">
+                    <a href="ImageSearch.html">Image_Search</a>
+                </div>
+                <div class="child advanced">
+                    <a href="AdvancedSearch.html">Advanced_Search</a>
+                </div>
+            </div>
+
+            <div class=form_div>
+                <form action="https://google.com/search">
+                    <div id = input_text>
+                        <input type="text" name="q">
+                    </div>
+                    <div id = submit_button>
+                        <input  name="search" type="submit" value="Google Search">
+                    </div>
+                    <div id = lucky>
+                        <input  name="btnI" type="submit" value="I'm Feeling Lucky">
+                        <input  name="source" type="hidden" value="hp">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
